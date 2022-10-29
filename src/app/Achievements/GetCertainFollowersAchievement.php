@@ -25,7 +25,7 @@ class GetCertainFollowersAchievement extends CastalkAchievementsAbstract
 
     public function target(): int
     {
-        $target = DB::table('castalk_achievement_list')
+        $target = DB::table('achievement_list')
             ->where('level', 1)
             ->where('class', GetCertainFollowersAchievement::class)
             ->first();
